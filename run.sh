@@ -3,7 +3,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=/Users/manh/Works/Self/livecaption/mp-defa
 echo "export json $GOOGLE_APPLICATION_CREDENTIALS"
 
 # config env
-export INPUT=en-US # en-US or ja-JP
+export INPUT=ja-JP # en-US or ja-JP
 echo "export input $INPUT"
 export OUTPUT=vi
 echo "export output $OUTPUT"
