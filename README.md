@@ -5,8 +5,8 @@ speak to text and translate use google
 
 # Install
 ```shell
-go get -u cloud.google.com/go/speech/apiv1
-go get -u cloud.google.com/go/translate/apiv3
+go mod download
+brew install gstreamer
 ```
 
 # Get json file
