@@ -65,6 +65,8 @@ func translateText(projectID string, sourceLang string, targetLang string, text 
 
 func main() {
 	input := os.Getenv("INPUT")
+	output := os.Getenv("OUTPUT")
+	project := os.Getenv("PROJECT")
 
 	ctx := context.Background()
 
@@ -136,7 +138,7 @@ func main() {
 		}
 		for _, result := range resp.Results {
 			transcript, confidence := result.Alternatives[len(result.Alternatives)-1].GetTranscript(), result.Alternatives[len(result.Alternatives)-1].Confidence
-			result, err := translateText("mp-default-project", input, "vi", transcript)
+			result, err := translateText(project, input, output, transcript)
 			if err != nil {
 				log.Fatalf("Can not translate: %v", err)
 			}
