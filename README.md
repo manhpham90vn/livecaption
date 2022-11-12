@@ -1,6 +1,6 @@
 # Summary
 ```
-speak to text and translate use google
+speech to text and translate use google
 ```
 
 # Install
